@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: transformers
-  version: "5.15.1"
+  version: 5.16.1
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 27c996bd9075ddc82d40f8590dfdc81ea45f611bfca477e0db5d7fd257a482f7
+  sha256: 17b0eac726ddc55e84ac58946063e0c6d37fd000c456b581f050ea0f4e822869
 
 build:
   number: 0
@@ -32,7 +32,7 @@ requirements:
     - packaging >=20.0
     - pyyaml >=5.1
     - regex >=2025.10.22
-    - tokenizers >=0.22.0,<=0.23.0
+    - tokenizers >=0.23.1,<0.24.0
     - typer
     - safetensors >=0.8.0
     - tqdm >=4.60
